@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Gallery Slider</h1>
+            <p>Explore beautiful landscapes and scenery</p>
+        </header>
+
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=600&fit=crop" alt="Mountain landscape">
+                    <div class="slide-content">
+                        <h2>Mountain Vista</h2>
+                        <p>Breathtaking mountain peaks at sunrise</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=600&fit=crop" alt="Beach sunset">
+                    <div class="slide-content">
+                        <h2>Tropical Paradise</h2>
+                        <p>Crystal clear waters and golden sands</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=1200&h=600&fit=crop" alt="Forest path">
+                    <div class="slide-content">
+                        <h2>Enchanted Forest</h2>
+                        <p>Mystical woodland trails and nature</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=600&fit=crop" alt="Lake reflection">
+                    <div class="slide-content">
+                        <h2>Serene Lake</h2>
+                        <p>Perfect reflections on calm waters</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&h=600&fit=crop" alt="Desert landscape">
+                    <div class="slide-content">
+                        <h2>Desert Dunes</h2>
+                        <p>Endless golden sand formations</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-btn prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="nav-btn next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <div class="dots-container"></div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="playPauseBtn">
+                <svg class="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <svg class="pause-icon hidden" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="6" y="4" width="4" height="16"></rect>
+                    <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+                <span id="playPauseText">Autoplay</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
